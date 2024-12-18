@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Site de Test</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Bienvenue sur le site de test</h1>
+            <p>Ce site est conçu pour vos tests et expérimentations.</p>
+        </header>
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#exemple">Exemple</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <section id="accueil">
+            <h2>Accueil</h2>
+            <p>Ceci est une page d'accueil simple avec du contenu statique. Vous pouvez modifier cette section pour tester différentes fonctionnalités.</p>
+            <button class="button" onclick="alert('Bienvenue dans ce site de test!')">Cliquez-moi</button>
+        </section>
+        <section id="exemple">
+            <h2>Exemple d'interactivité</h2>
+            <p>Voici un exemple de formulaire interactif :</p>
+            <form onsubmit="return handleSubmit(event)">
+                <label for="name">Votre nom :</label>
+                <input type="text" id="name" name="name" required />
+                <br /><br />
+                <button type="submit" class="button">Envoyer</button>
+            </form>
+            <p id="response" style="color: green; margin-top: 10px"></p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Pour toute question, modifiez cette section ou ajoutez un formulaire de contact.</p>
+        </section>
+        <footer>
+            <p>&copy; 2024 Site de Test. Créé par Nicolas LACOSSE.</p>
+        </footer>
+        <script src="scripts.js"></script>
+    </body>
+</html>
